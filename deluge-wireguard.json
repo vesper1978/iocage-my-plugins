@@ -1,0 +1,46 @@
+{
+    "name": "deluge-pip",
+    "plugin_schema": "2",
+    "release": "12.2-RELEASE",
+    "artifact": "https://github.com/vesper1978/iocage-deluge-wireguard.git",
+    "properties": {
+        "allow_raw_sockets":"1",
+        "dhcp":"1"
+    },
+    "devfs_ruleset": {
+        "paths": {
+            "zfs": null,
+            "bpf*": null,
+            "tun*": null
+        },
+        "includes": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    "pkgs": [
+        "bash",
+        "base64",
+        "ca_root_nss",
+        "curl",
+        "jq",
+        "python38",
+        "py38-pip",
+        "py38-pillow",
+        "py38-libtorrent-rasterbar",
+        "rust",
+        "wireguard-tools",
+        "wireguard-go"
+    ],
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+    "fingerprints": {
+        "plugin-default": [
+            {
+                "function": "sha256",
+                "fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+            }
+        ]
+    },
+    "official": false
+}
