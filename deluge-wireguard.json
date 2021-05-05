@@ -1,8 +1,8 @@
 {
-    "name": "deluge-pip",
+    "name": "deluge-wireguard",
     "plugin_schema": "2",
     "release": "12.2-RELEASE",
-    "artifact": "https://github.com/vesper1978/iocage-deluge-wireguard.git",
+    "artifact": "https://github.com/vesper1978/iocage-plugin-deluge-wireguard.git",
     "properties": {
         "allow_raw_sockets":"1",
         "dhcp":"1"
